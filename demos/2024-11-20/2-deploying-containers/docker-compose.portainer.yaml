@@ -1,0 +1,22 @@
+services:
+  portainer:
+    image: portainer/portainer-ce:2.21.4-alpine
+    ports:
+      - 127.0.0.1:9000:8000
+      - 127.0.0.1:9443:9443
+    volumes:
+      - portainer_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - tedge
+    # To use a customer password, use the following to generate a password hash
+    # docker run --rm httpd:2.4-alpine htpasswd -nbB admin 'thin-edge.io' | cut -d ":" -f 2 | sed 's/\$/\$\$/g'
+    command: '-H unix:///var/run/docker.sock --admin-password=$$2y$$05$$FoiOMN862oYKqhT4oMuRCO90kfSGwFugCXq1LrFjgRArme0fZrFN2 --logo=https://raw.githubusercontent.com/thin-edge/thin-edge.io/main/images/thin-edge-logo.png'
+    restart: always
+
+volumes:
+  portainer_data:
+
+networks:
+  tedge:
+    external: true
