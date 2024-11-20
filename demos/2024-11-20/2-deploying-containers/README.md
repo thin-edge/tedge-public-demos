@@ -34,5 +34,6 @@ Stop the demo container and delete the device from Cumulocity.
 
 ```sh
 c8y tedge demo stop conner001
-c8y identity get --name conner001 --silentStatusCodes 404 | c8y devices delete --cascade
+c8y identity get --name conner001 --silentStatusCodes 404 | c8y devices delete --cascade -f
+c8y inventory find --owner "device_conner001" | c8y inventory delete -f
 ```

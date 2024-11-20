@@ -42,4 +42,5 @@ Stop the demo container and delete the device from Cumulocity.
 c8y tedge demo stop legacyagent001
 c8y identity get --name legacyagent001 --silentStatusCodes 404 | c8y devices delete --cascade -f
 c8y users get --id device_legacyagent001 --silentStatusCodes 404 | c8y users delete -f
+c8y inventory find --owner "device_legacyagent001" | c8y inventory delete -f
 ```
