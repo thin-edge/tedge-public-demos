@@ -1,0 +1,25 @@
+services:
+  nodered:
+    image: docker.io/nodered/node-red:4.0.3-22-minimal
+    restart: always
+    environment:
+      - NODE_RED_ENABLE_PROJECTS=false
+      - TEDGE_MQTT_HOST=host.containers.internal
+      # Use custom mosquitto listener for container networks
+      - TEDGE_MQTT_PORT=1884
+    ports:
+      - 1880:1880
+    volumes:
+      - node_red_data:/data
+    networks:
+      - tedge
+    # Must only be added if using docker api, as podman adds this in by default
+    extra_hosts:
+      - "host.containers.internal:host-gateway"
+
+volumes:
+  node_red_data:
+
+networks:
+  tedge:
+    external: true
