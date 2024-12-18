@@ -1,4 +1,4 @@
-# Demo - 2024-12-18
+# Release Demo 1.4.0 - 2024-12-18
 
 ## Agenda
 
@@ -28,10 +28,10 @@ Other great improvements:
 
 * Customers can connect and push their data to their own tenant whilst a second Cumulocity connection can be used to keep the device up-to-date with the latest security patches / functionality.
 
-### 3. Using workflows in custom operation handlers
-
-* Use thin-edge.io workflows for robust execution of custom operations
-
-### 4. Upload files to Cumulocity with a single command
+### 3. Upload files to Cumulocity with a single command
 
 * Create events and upload a binary to them in a single CLI command
+
+### 4. Using workflows in custom operation handlers
+
+* Use thin-edge.io workflows for robust execution of custom operations
