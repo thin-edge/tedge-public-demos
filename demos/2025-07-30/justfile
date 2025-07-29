@@ -1,0 +1,2 @@
+start:
+    npx @marp-team/marp-cli@latest -s slides
