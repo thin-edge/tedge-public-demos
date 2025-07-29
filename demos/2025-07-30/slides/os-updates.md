@@ -38,7 +38,7 @@
     * One file per release
     * Index file is included as part of the update
     * Device must download the relevant "parts" of the image
-    * Device can't predict how "efficient" the download will be
+    * More difficult to predict how "efficient" the download will be
 
 * Method 2: Static
     * Delta between two specific versions is generated before sending to the device
@@ -110,7 +110,8 @@ INFO downloaded 100.0% (9.9613685MiB/9.9613685MiB) of the full bundle
 
 * Currently only an out-of-the-box integration is provided for Raspberry Pi 4/5 (requires the TryBoot bootloader to be already installed)
 * Other integrations are possible - please reach out to [Silitics](https://oss.silitics.com/rugix/commercial-support) for Commercial support
-* Rugix - planned features: u-boot / grub support for migrating from and running in parallel with other OTA solutions
+* Rugix - planned features: support for safe migration of existing RAUC and Mender systems in the field
+    * PoC was already successful to migrate from Mender and Rauc to Rugix
 
 ---
 
