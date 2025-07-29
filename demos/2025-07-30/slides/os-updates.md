@@ -110,6 +110,7 @@ INFO downloaded 100.0% (9.9613685MiB/9.9613685MiB) of the full bundle
 
 * Currently only an out-of-the-box integration is provided for Raspberry Pi 4/5 (requires the TryBoot bootloader to be already installed)
 * Other integrations are possible - please reach out to [Silitics](https://oss.silitics.com/rugix/commercial-support) for Commercial support
+* Rugix - planned features: u-boot / grub support for migrating from and running in parallel with other OTA solutions
 
 ---
 
