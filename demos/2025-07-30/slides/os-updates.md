@@ -76,7 +76,7 @@
 Rugix is an open-source tool suite to build reliable embedded Linux devices with efficient and secure over-the-air (OTA) update capabilities.
 
 * Rugix is actually now composed of two components
-    * Rugix (perform reliable A/B updates)
+    * Rugix Ctrl (perform reliable A/B updates)
     * Rugix Bakery (Build OS Images for use with A/B Robust Updates)
 
 ---
