@@ -86,8 +86,12 @@ Rugix is an open-source tool suite to build reliable embedded Linux devices with
 * **meta-rugix** Layer New Yocto Layer to integrate Rugix into your Yocto images
 * **meta-tedge** Integrates the new meta-rugix layer to build a thin-edge.io and Rugix enabled image
 
-* Smaller OS images than Debian (~200MB instead of 500MB)
-    
+* Smaller OS images than Debian (~200MB instead of ~700MB)
+
+---
+
+# Demo time
+
 ---
 
 # Real-world delta update comparison
@@ -117,8 +121,7 @@ INFO downloaded 100.0% (9.9613685MiB/9.9613685MiB) of the full bundle
 
 # Links
 
-* [Rugix](https://oss.silitics.com/rugix/) project page
-* [Rugix Delta Update blog post](https://oss.silitics.com/rugix/blog/efficient-delta-updates/)
-
-* [meta-rugix](https://github.com/silitics/meta-rugix) - Rugix Yocto Layer
-* [meta-tedge](https://github.com/thin-edge/meta-tedge)- thin-edge.io Yocto Layer
+- [Rugix](https://oss.silitics.com/rugix/) project page
+- [Rugix Delta Update blog post](https://oss.silitics.com/rugix/blog/efficient-delta-updates/)
+- [meta-rugix](https://github.com/silitics/meta-rugix) - Rugix Yocto Layer
+- [meta-tedge](https://github.com/thin-edge/meta-tedge)- thin-edge.io Yocto Layer
