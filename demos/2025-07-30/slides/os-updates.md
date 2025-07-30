@@ -66,8 +66,8 @@
 |Rauc|✅|🚫|
 |mender|🚫|✅ (if you pay for it)|
 |Rugix|✅|✅|
+|SWUpdate|✅(requires manual integration)|✅(requires manual integration)|
 
-Note: SWUpdate might also support some of these features but wasn't part of the comparison
 
 ---
 
